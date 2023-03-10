@@ -1,47 +1,55 @@
-/* Estilos para el título y descripción */
+/* Estilos para todo el documento */
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos para el encabezado */
 header {
-	text-align: center;
-	margin-top: 20px;
-}
-h1 {
-	font-size: 60px;
-	font-weight: bold;
-	color: #2CAF90;
-	margin-bottom: 10px;
-	font-family: 'Roboto Sans', sans-serif;
-}
-h2 {
-	font-size: 24px;
-	color: #2CAF90;
-	font-family: 'Roboto Sans', sans-serif;
-}
-
-/* Estilos para la descripción */
-.content {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
+	background-color: #333;
+	color: #fff;
+	padding: 2rem;
 	text-align: center;
 }
-p {
-	font-size: 18px;
-	margin-bottom: 20px;
-	font-family: 'Roboto Sans', sans-serif;
+
+header h1 {
+	font-size: 2.5rem;
+	margin: 0;
 }
 
-/* Estilos para el iframe de la línea de tiempo */
-iframe {
-	display: block;
-	margin: 0 auto;
-	border: none;
+header p {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+/* Estilos para la sección de video */
+.video-section {
+	background-color: #f1f1f1;
+	padding: 2rem;
+	text-align: center;
+}
+
+.video-section h2 {
+	font-size: 2rem;
+	margin-top: 0;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* Proporción 16:9 */
+	height: 0;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	max-width: 800px;
-	height: 650px;
+	height: 100%;
 }
 
-/* Estilos para el footer con los créditos */
-footer {
-	text-align: center;
-	font-size: 14px;
-	color: #ffffff;
-	background-color
+/* Estilos para la sección de imágenes */
+
