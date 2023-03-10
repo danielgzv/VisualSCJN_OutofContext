@@ -1,46 +1,69 @@
-/* Estilos para todo el documento */
+/* Estilos generales */
 body {
 	font-family: Arial, sans-serif;
-	color: #333;
-	background-color: #fff;
 	margin: 0;
 	padding: 0;
 }
 
-/* Estilos para el encabezado */
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 2rem;
-	text-align: center;
-}
-
-header h1 {
-	font-size: 2.5rem;
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
 	margin: 0;
 }
 
-header p {
-	font-size: 1.5rem;
-	margin: 0;
+h1 {
+	font-size: 3rem;
 }
 
-/* Estilos para la sección de video */
-.video-section {
-	background-color: #f1f1f1;
-	padding: 2rem;
-	text-align: center;
-}
-
-.video-section h2 {
+h2 {
 	font-size: 2rem;
-	margin-top: 0;
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 1.5rem;
+}
+
+/* Estilos del header */
+header {
+	background-color: #343a40;
+	color: #fff;
+	padding: 1rem;
+}
+
+/* Estilos de la descripción */
+.description-section {
+	padding: 1rem;
+}
+
+/* Estilos de la línea de tiempo */
+.timeline-section {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 2rem;
+}
+
+.timeline-section iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Estilos del video */
+.video-section {
+	padding: 1rem;
 }
 
 .video-container {
 	position: relative;
-	padding-bottom: 56.25%; /* Proporción 16:9 */
+	padding-bottom: 56.25%;
+	padding-top: 30px;
 	height: 0;
+	overflow: hidden;
 }
 
 .video-container iframe {
@@ -51,5 +74,34 @@ header p {
 	height: 100%;
 }
 
-/* Estilos para la sección de imágenes */
+/* Estilos de las imágenes */
+.image-section {
+	padding: 1rem;
+}
 
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+}
+
+.image-item img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Estilos de los créditos */
+.credits-section {
+	padding: 1rem;
+	text-align: center;
+}
+
+/* Estilos del footer */
+footer {
+	background-color: #343a40;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+	font-size: 0.8rem;
+}
